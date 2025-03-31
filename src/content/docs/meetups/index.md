@@ -1,6 +1,6 @@
 ---
-title: Helsinki
-description: A meetup page in my new Starlight docs site.
+title: Meetups page
+description: List all meetups here
 hero:
   title: The first meetup
   tagline: Where it all began.
