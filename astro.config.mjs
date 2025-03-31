@@ -5,26 +5,34 @@ import catppuccin from "starlight-theme-catppuccin";
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://fmkc.fi',
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'FMKC',
+			customCss: [
+				'./src/style.css',
+			],
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				// github: 'https://github.com/withastro/starlight',
 			},
 			plugins: [
 				catppuccin()
 			],
 			sidebar: [
 				{
+					label: 'Meetups',
+					autogenerate: { directory: 'meetups' }
+				},
+				{
+					label: 'Projects',
+					autogenerate: { directory: 'reference' },
+				},
+				{
 					label: 'Guides',
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					]
 				},
 			],
 		}),
