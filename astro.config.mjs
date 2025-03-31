@@ -36,6 +36,9 @@ export default defineConfig({
 					]
 				},
 			],
+			components: {
+				Head: './src/components/CustomHead.astro',
+			},
 		}),
 	],
 });

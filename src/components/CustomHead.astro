@@ -1,0 +1,34 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import fmkcLogo from '../assets/fmkc_logo.png';
+
+const { entry } = Astro.props;
+
+// Use the site URL from astro.config.mjs
+const siteUrl = Astro.site;
+
+// Safely get the `ogImage` from frontmatter or use the default logo
+let ogImagePath = entry?.data?.ogImage || fmkcLogo.src;
+
+// Ensure the `ogImagePath` is resolved to an absolute URL
+if (!ogImagePath.startsWith('http')) {
+  ogImagePath = new URL(ogImagePath, siteUrl).href;
+}
+
+// Safely get the page title or use a default
+const pageTitle = entry?.data?.title || 'Finnish Mechanical Keyboard Community';
+
+// Safely get the page description or use a default
+const pageDescription = entry?.data?.description || 'The hobby is great but the community makes it better.';
+---
+
+<!-- Add your Open Graph tags -->
+<meta property="og:title" content={pageTitle} />
+<meta property="og:description" content={pageDescription} />
+<meta property="og:image" content={ogImagePath} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content={pageTitle} />
+<meta property="twitter:description" content={pageDescription} />
+<meta property="twitter:image" content={ogImagePath} />
