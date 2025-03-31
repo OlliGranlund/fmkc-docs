@@ -2,12 +2,11 @@
  * Potential custom styles for adjusting/fixing the layout(s)
  */
 
-/*
-body {
-    background: red !important;
+:root {
+    --text-container-width: 1000px;
 }
-*/
 
+/*
 .cover {
     position: relative;
     width: 100%;
@@ -28,7 +27,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -46,15 +45,21 @@ body {
     font-size: 1.2rem;
     margin: 0.5rem 0 0;
 }
+*/
+
+div.content-panel {
+    overflow-x: hidden;
+}
 
 div.hero {
     gap: 0;
     position: relative;
-    padding-right: 0.5rem;
-    padding-top: 8rem;
-    padding-bottom: 4rem;
-    padding-left: 4rem;
-    z-index: initial;
+    margin-bottom: 4rem;
+}
+
+div.hero .sl-flex.stack {
+    max-width: var(--text-container-width);
+    margin: 0 auto;
 }
 
 div.hero img {
@@ -83,5 +88,10 @@ div.hero::after {
 }
 
 .sl-container {
-    max-width: 100% !important; /* sorry */
+    max-width: none;
+}
+
+.sl-markdown-content {
+    max-width: var(--text-container-width);
+    margin: 0 auto;
 }

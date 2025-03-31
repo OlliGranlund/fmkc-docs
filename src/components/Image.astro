@@ -1,0 +1,11 @@
+---
+const { image, alt, debug } = Astro.props;
+
+
+console.log({image, alt, debug});
+---
+
+<div>
+    <h1>Hejssan</h1>
+    <img src={image.src} alt={alt} class="full-width" style="width: 100%;" />
+</div>

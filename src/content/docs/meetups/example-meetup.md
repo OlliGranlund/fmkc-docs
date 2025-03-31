@@ -8,7 +8,14 @@ hero:
   tagline: Where it all began.
   image:
     alt: A glittering, brightly colored logo
-    file: ../../../assets/fmkc_logo.png
+    file: ../../../assets/the_first_meetup.jpg
+  actions:
+    - text: See images
+      link: https://photos.app.goo.gl/9caHbXGAcyB88rPn6
+      icon: right-arrow
+      attrs:
+        target: _blank
+        
 sidebar:
   # Set a custom order for the link (lower numbers are displayed higher up, please reference to other pages and set accordingly)
   order: 10001
@@ -16,6 +23,8 @@ sidebar:
   badge: # Remove badge when meetup has happened!
     text: Upcoming
     variant: tip
+
+tableOfContents: false
 ---
 
 Lorem iupsum

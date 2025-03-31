@@ -11,5 +11,6 @@ hero:
 sidebar:
   label: Meetups
   order: 1
-  hidden: true
+
+tableOfContents: false
 ---
