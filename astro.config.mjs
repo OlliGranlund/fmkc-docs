@@ -5,7 +5,8 @@ import catppuccin from "starlight-theme-catppuccin";
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://fmkc.fi',
+	site: 'https://olligranlund.github.io',
+	base: '/fmkc-docs',
 	integrations: [
 		starlight({
 			title: 'FMKC',
