@@ -16,7 +16,7 @@ export default defineConfig({
 				// github: 'https://github.com/withastro/starlight',
 			},
 			plugins: [
-				catppuccin()
+				catppuccin(),
 			],
 			sidebar: [
 				{
@@ -25,7 +25,7 @@ export default defineConfig({
 				},
 				{
 					label: 'Projects',
-					autogenerate: { directory: 'reference' },
+					autogenerate: { directory: 'projects' },
 				},
 				{
 					label: 'Guides',
