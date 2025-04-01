@@ -57,9 +57,26 @@ div.hero {
     margin-bottom: 4rem;
 }
 
+@media (max-width: 768px) {
+    div.hero {
+        margin-bottom: 2rem;
+    }
+}
+
+
 div.hero .sl-flex.stack {
     max-width: var(--text-container-width);
     margin: 0 auto;
+    padding-left: 4rem;
+}
+
+@media (max-width: 768px) {
+    div.hero .sl-flex.stack {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
 
 div.hero img {
