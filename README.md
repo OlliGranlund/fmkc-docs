@@ -1,4 +1,4 @@
-# FMKC Docs
+# fmkc.fi
 
 ## Based on Starlight Starter Kit
 
