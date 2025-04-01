@@ -21,6 +21,10 @@ export default defineConfig({
 			],
 			sidebar: [
 				{
+					label: 'Discord',
+					slug: 'discord'
+				},
+				{
 					label: 'Meetups',
 					autogenerate: { directory: 'meetups' }
 				},
