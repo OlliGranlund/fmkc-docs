@@ -30,10 +30,12 @@ export default defineConfig({
 				},
 				{
 					label: 'Projects',
+					collapsed: true,
 					autogenerate: { directory: 'projects' },
 				},
 				{
 					label: 'Guides',
+					collapsed: true,
 					items: [
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Example Guide', slug: 'guides/example' },
