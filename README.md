@@ -1,19 +1,6 @@
-# fmkc.fi
+# ⌨️ Homepage for the Finnish Mechanical Keyboarc Community (FMKC) - fmkc.fi
 
-## Based on Starlight Starter Kit
-
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
-
-```
-npm create astro@latest -- --template starlight
-```
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/withastro/starlight&create_from_path=examples/basics)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+The purpose of this site is to host information about the Finnish Mechanical Keyboard Community and be a open-source archive for the community. It'll at least contain information about past and upcoming events, but could also host other information eg. about community projects or perhaps guides, maybe even a list of resources/products that are more targeted towards the Finnish community.
 
 ## 🚀 Project Structure
 
@@ -26,6 +13,10 @@ Inside of your Astro + Starlight project, you'll see the following folders and f
 │   ├── assets/
 │   ├── content/
 │   │   ├── docs/
+│   │   │   ├── discord/
+│   │   │   ├── meetups/
+│   │   │   ├── projects/
+│   │   │   ├── ...
 │   └── content.config.ts
 ├── astro.config.mjs
 ├── package.json
@@ -51,6 +42,13 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+For future reference, this site was originally created with Node v23, so if you are doing changes to the lockfile, please use that or any later version.
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+## 👀 Want to contribute?
+
+Editing content is as simple as editing the `.mdx` files in `src/content/docs/`, and if you want to create new pages, just create new `.mdx` files in the same directory. Please use the other pages and example-pages as reference. We are accepting PRs and issues on a low treshold. If you have any ideas on how to improve the site, feel free to open an issue or a PR!
+
+## 🏆 Contributors
+
+- [OlliGranlund](https://olli.works)
+- And maybe you? 👀 A successfull PR gives you a spot here!
