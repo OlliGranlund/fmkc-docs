@@ -51,4 +51,5 @@ Editing content is as simple as editing the `.mdx` files in `src/content/docs/`,
 ## 🏆 Contributors
 
 - [OlliGranlund](https://olli.works)
+- [winskil](https://github.com/winskil)
 - And maybe you? 👀 A successfull PR gives you a spot here!
