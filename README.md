@@ -52,4 +52,5 @@ Editing content is as simple as editing the `.mdx` files in `src/content/docs/`,
 
 - [OlliGranlund](https://olli.works)
 - [winskil](https://github.com/winskil)
+- [wivim](https://github.com/wivim)
 - And maybe you? 👀 A successfull PR gives you a spot here!
